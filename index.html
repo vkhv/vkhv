@@ -25,7 +25,18 @@
                 position: fixed;
                 padding: 10%;
             }
-		</style>
+	    .content:after {
+		    background: rgba(192, 192, 192, 0.22);
+		    content: '';
+		    position: absolute;
+		    left: 15%;
+		    right: 15%;
+		    top: 15%;
+		    bottom: 15%;
+		    z-index: -2;
+		    filter: blur(10px);
+	    }
+	</style>
 	</head>
 	<body>
         <div class="content">
