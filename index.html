@@ -6,7 +6,6 @@
         <style type="text/css" media="all">
             body {
                 font-family: 'helvetica';
-		background: url("https://images.unsplash.com/photo-1475710534222-6165a8b45449?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=");
             }
             h1 {
                 font-weight: 300;
@@ -395,9 +394,9 @@
 				}
 
 				renderer = new THREE.CanvasRenderer();
-				//renderer.setClearColor( 0xffffff );
+				renderer.setClearColor( 0xffffff );
 				renderer.setPixelRatio( window.devicePixelRatio );
-				renderer.setSize( SCREEN_WIDTH, /*SCREEN_HEIGHT*/ 200 );
+				renderer.setSize( SCREEN_WIDTH, SCREEN_HEIGHT );
 
 				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 				document.body.appendChild( renderer.domElement );
