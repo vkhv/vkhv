@@ -396,7 +396,7 @@
 				renderer = new THREE.CanvasRenderer();
 				//renderer.setClearColor( 0xffffff );
 				renderer.setPixelRatio( window.devicePixelRatio );
-				renderer.setSize( SCREEN_WIDTH, SCREEN_HEIGHT );
+				renderer.setSize( SCREEN_WIDTH, /*SCREEN_HEIGHT*/ 200 );
 
 				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 				document.body.appendChild( renderer.domElement );
